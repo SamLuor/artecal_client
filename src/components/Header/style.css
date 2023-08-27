@@ -1,0 +1,56 @@
+.header-container {
+  height: 4.5rem;
+  max-height: 4.5rem;
+  @apply flex justify-between px-2 sm:px-8 py-2 shadow-2xl bg-white;
+}
+
+.header-container .header-left {
+  @apply flex gap-20 items-center;
+}
+
+.header-container .btn-side-bar {
+  font-size: 1.3rem;
+  @apply bg-transparent text-gray-500 border-none !important;
+}
+
+.header-container .btn-side-bar:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgb(59 130 246),
+    0 1px 2px 0 rgb(0, 0, 0);
+}
+
+.header-container .header-right {
+  @apply flex gap-2 items-center;
+}
+
+.header-container .icon-header {
+  @apply text-gray-500 text-2xl cursor-pointer;
+}
+
+.header-container .icon-header:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgb(59 130 246),
+    0 1px 2px 0 rgb(0, 0, 0);
+}
+
+.img-mobile {
+  height: 2rem;
+  width: 4rem;
+  @apply md:hidden;
+}
+
+.img-desk {
+  width: 110px;
+  @apply hidden md:block;
+}
+
+.menu-user.p-menu {
+  width: 13.5rem;
+}
+
+.menu-user.p-menu .p-menuitem-link .p-menuitem-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-user.p-menu .p-submenu-header {
+  @apply text-gray-500 font-semibold;
+}

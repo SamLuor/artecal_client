@@ -1,0 +1,85 @@
+.card-upload {
+  position: relative;
+  width: 250px;
+  aspect-ratio: 16/9;
+  @apply border border-gray-400 rounded-lg;
+}
+
+.card-upload.background {
+}
+
+.card-upload .p-fileupload.p-fileupload-basic.p-component {
+  height: 100%;
+  width: 100%;
+}
+
+.card-upload .p-button.p-component.p-fileupload-choose {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fcfcfc;
+  border-radius: 8px 8px 0px 0px;
+  @apply text-gray-600 border-none;
+}
+.card-upload .p-button.p-component.p-fileupload-choose:hover {
+  @apply bg-slate-100;
+}
+
+.card-upload .icon-card-trash {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  transform: translate(15px, -15px);
+  transition: 0.2s ease-in-out;
+  @apply bg-white rounded-full text-red-500 shadow-xl cursor-pointer hover:bg-red-500 hover:text-white;
+}
+
+.container-upload-upload {
+  width: 250px;
+}
+
+.container-upload-upload .error {
+  @apply text-red-500;
+}
+
+.container-upload-upload .inputs-image {
+  box-shadow: none;
+  width: 100%;
+  border-radius: 5px 5px 7px 7px;
+}
+.container-upload-upload .image {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.p-button-label.p-clickable {
+  display: none; /* Remove o texto da label */
+}
+
+.p-checkbox.p-component.checkbox-image {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  transform: translateY(calc(250px / (21 / 9.8)));
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  background: #1871ff !important;
+  border: none;
+  @apply bg-blue-500 !important;
+}
+
+.p-checkbox .p-checkbox-box.p-focus {
+  box-shadow: none;
+}
+
+.p-checkbox .p-checkbox-box:focus {
+  box-shadow: none;
+}
+
+.p-inputtext:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: none !important;
+  border-color: var(--inputs-border) !important;
+}

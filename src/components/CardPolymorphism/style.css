@@ -1,0 +1,75 @@
+.card-polymorphism {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 4px;
+  color: #f7f7f7 !important;
+  border-radius: 8px;
+  border: 1px solid rgba(166, 166, 166, 0.21);
+  background: rgba(217, 217, 217, 0.14);
+  backdrop-filter: blur(4px);
+  @apply p-4 duration-300 ease-in-out;
+}
+
+.card-polymorphism:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(1, 48, 123, 0.8) 0%,
+    rgba(41, 43, 45, 0.58) 100%
+  );
+}
+
+.mobile .card-polymorphism {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #f7f7f7 !important;
+  @apply border-1 border-gray-500 p-2 rounded-md;
+}
+
+.card-polymorphism .icon-container {
+  width: 25px;
+  height: 25px;
+  color: #88c425;
+  font-size: 18px;
+  @apply grid place-items-center rounded-md;
+}
+
+.mobile .card-polymorphism .icon-container {
+  width: 30px;
+  height: 30px;
+  background-color: #727272;
+  font-size: 18px;
+  @apply grid place-items-center rounded-md;
+}
+
+.card-polymorphism .icon-container.modal {
+  @apply w-7 sm:w-9 md:w-11 lg:w-10 h-7 sm:h-9 md:h-11 lg:h-10;
+}
+.card-polymorphism .title {
+  font-size: 10.5px;
+  @apply font-semibold text-gray-100;
+}
+
+.mobile .card-polymorphism .title {
+  @apply font-bold text-gray-100 text-section-page-r-mobi;
+}
+
+.card-polymorphism .title.modal {
+  @apply text-xs sm:text-sm lg:text-lg;
+}
+.card-polymorphism .description {
+  font-size: 9px;
+  max-height: 100px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0, 0.1) transparent; 
+  @apply text-gray-300 overflow-y-scroll;
+}
+
+.mobile .card-polymorphism .description {
+  @apply text-title-page-r-desk;
+}
+
+.card-polymorphism .description.modal {
+  @apply text-xs md:text-base;
+}

@@ -1,0 +1,314 @@
+.page-about-frame {
+  min-width: 500px;
+  width: 100%;
+  height: 110%;
+  background-color: #393b3f;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 100;
+  @apply flex flex-col items-center;
+}
+
+.page-about-frame.mobile {
+  width: 380px;
+  height: min-content;
+  min-height: 110%;
+  max-height: fit-content;
+  min-width: auto;
+  overflow-y: hidden;
+  padding-bottom: 2rem;
+}
+
+.background-container-image.about-background {
+  aspect-ratio: 16 / 9;
+}
+
+.mobile .background-container-image.about-background {
+  aspect-ratio: 9 / 16;
+}
+
+.header-principal-line {
+  width: 110px;
+  position: relative;
+}
+.header-principal-line::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 15px;
+  z-index: 0;
+  position: relative;
+  background-color: rgb(50, 122, 255);
+  transform: translate(-2.5px, -17px);
+}
+
+.bg-overlay-blue {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 97, 187, 0.705);
+}
+
+/* Header Style
+ */
+.header-about-us {
+  @apply flex gap-5 items-center;
+}
+
+.header-about-us .text-header {
+  @apply text-base font-semibold text-white w-2/5;
+}
+
+.mobile .header-about-us .text-header {
+  @apply text-base font-semibold text-white w-full;
+}
+
+.header-about-us .circle-spin {
+  border: 1px dashed #d6d6d6;
+  animation: spin 40s linear infinite;
+  @apply bg-transparent p-8 h-10  rounded-full relative grid place-items-center;
+}
+
+.header-about-us .circle-spin::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px dashed #d6d6d6;
+  animation: spinInverse 10s linear infinite;
+  @apply p-7 rounded-full;
+}
+
+.header-about-us .circle-spin::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px dashed #d6d6d6;
+  animation: spinInverse 10s linear infinite;
+  @apply p-9 rounded-full;
+}
+
+/* Policies Cards */
+.container-policies-section .circle-rotate {
+  border: 1px dashed #d6d6d6;
+  animation: spin 40s linear infinite;
+  @apply bg-transparent p-10 h-10  rounded-full relative grid place-items-center;
+}
+
+.container-policies-section .circle-rotate::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px dashed #d6d6d6;
+  animation: spinInverse 10s linear infinite;
+  @apply p-11 rounded-full;
+}
+
+.policies-view-section {
+  display: flex;
+  align-items: center;
+}
+
+.policies-view-section::before {
+  content: "";
+  margin-right: 5px;
+  padding: 1px 4px;
+  background-color: #88c425;
+}
+
+.service-description-view {
+  @apply text-lg font-medium w-3/5;
+}
+
+.mobile .service-description-view {
+  @apply w-full;
+}
+
+.center-container-word {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  @apply grid place-items-center relative;
+}
+
+.mobile .center-container-word {
+  grid-column: 1;
+  grid-column: 1;
+  grid-row-end: 2;
+  grid-row: 3;
+}
+
+.container-policies-section .center-container-word .center-word {
+  position: relative;
+  @apply w-28 h-28 z-50 rounded-full bg-white text-black grid place-items-center;
+}
+.container-policies-section .center-container-word .center-word::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px dashed #d6d6d6;
+  animation: spin 20s linear infinite;
+  @apply p-20 rounded-full;
+}
+
+.container-policies-section .center-container-word .center-word::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px dashed #d6d6d6;
+  animation: spinInverse 20s linear infinite;
+  @apply p-14 rounded-full;
+}
+
+.container-policies-section .center-container-word .first-circle {
+  position: absolute;
+  @apply w-14 h-14 -translate-y-12 -translate-x-9 grid place-items-center;
+}
+
+.container-policies-section .center-container-word .circle {
+  border: 1px dashed #d2d2d2;
+  animation: spin 20s linear infinite;
+  background-color: #88c425 !important;
+  @apply w-full h-full rounded-full  text-black;
+}
+
+.container-policies-section .center-container-word .second-circle {
+  position: absolute;
+  @apply w-14 h-14 translate-y-14 grid place-items-center;
+}
+
+/*  */
+
+.container-value-company .section-view {
+  display: flex;
+  align-items: center;
+  @apply text-xs;
+}
+.container-value-company .section-view::before {
+  content: "";
+  margin-right: 5px;
+  padding: 1px 4px;
+  background-color: #88c425;
+}
+
+.container-value-company .title {
+  @apply text-sm font-medium w-2/6;
+}
+
+.mobile .container-value-company .title {
+  @apply w-5/6 mb-5;
+}
+
+.container-value-company .container-values {
+  @apply grid grid-cols-2 gap-4 mt-4;
+}
+
+.mobile .container-values {
+  @apply grid grid-cols-1 relative;
+}
+
+.value-toggle {
+  @apply z-10;
+}
+
+.value-toggle.p-panel.p-panel-toggleable .p-panel-header {
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  border: 0.5px solid #808080;
+  @apply text-xs font-light bg-transparent text-white !important;
+}
+
+.value-toggle .p-panel-header .p-panel-title {
+  @apply text-white;
+}
+
+.value-toggle .p-panel-header.expanded .p-panel-title {
+  @apply text-green-400;
+}
+
+.value-toggle.p-panel .p-panel-header .p-panel-title {
+  @apply text-xxs font-normal !important;
+}
+
+.value-toggle.p-panel.p-panel-toggleable .p-panel-header-icon {
+  @apply text-xxs text-gray-600 bg-gray-200 w-4 h-4;
+}
+
+.value-toggle.p-panel.p-panel-toggleable .p-panel-header-icon:focus {
+  box-shadow: none;
+}
+
+.value-toggle.p-panel .p-panel-content {
+  font-size: 8.5px;
+  border: 0.5px solid #808080;
+  border-top-color: transparent;
+  @apply p-2 bg-transparent text-white;
+}
+
+.container-panels-value {
+  @apply pl-4 flex flex-col gap-4;
+}
+.mobile .container-panels-value {
+  @apply pl-0;
+}
+
+/*  */
+.container-about-us-call {
+  background: linear-gradient(90deg, #1871ff 0%, rgba(136, 196, 37, 0.5) 100%);
+  @apply w-full h-14 flex justify-between items-center px-8;
+}
+
+.mobile .container-about-us-call {
+  @apply mt-24;
+}
+
+.container-about-us-call .title {
+  @apply text-lg font-semibold text-white;
+}
+
+.btn-about-us-call {
+  background: linear-gradient(
+    90deg,
+    rgba(24, 113, 255, 0.44) 0%,
+    rgba(136, 196, 37, 0.44) 100%
+  ) !important;
+  @apply rounded-full p-2 px-4 text-sm border-none hover:bg-blue-500 !important;
+}
+
+.mobile .btn-about-us-call {
+  @apply rounded-full w-28 text-xxs border-none hover:bg-blue-500 !important;
+}
+
+.container-products-home .icon-product {
+  @apply w-12 h-12 text-2xl bg-blue-500 rounded-full grid place-items-center text-white;
+}
+
+.btn-products-home {
+  @apply w-32 p-2 h-8 text-xs font-thin bg-white border-none text-gray-600 !important;
+}
+
+.btn-products-home {
+  @apply w-36 p-2 h-8 text-xxs font-thin bg-white border-none text-gray-600 !important;
+}
+
+.btn-products-home .p-button-icon {
+  @apply text-lime-600;
+}
+
+.mobile .home-products-view {
+  @apply text-base;
+}
+
+@media only screen and (max-width: 912px) {
+  .page-home-frame {
+    @apply hidden;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinInverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}

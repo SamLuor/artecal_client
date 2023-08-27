@@ -1,0 +1,24 @@
+.layout-panel {
+  height: calc(100vh - 4.5rem);
+  display: flex;
+  gap: 2rem;
+  padding: 2rem ;
+  background-color: #EFF3F8;
+}
+
+.container-fluid {
+  margin-left: calc(300px + 2rem);
+  padding: 1rem 1.5rem;
+  transition: margin-left .2s ease-in-out;
+  @apply bg-white rounded-lg shadow-md;
+}
+
+.container-fluid.active {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 714px) {
+  .container-fluid {
+    margin-left: 0;
+  }
+}

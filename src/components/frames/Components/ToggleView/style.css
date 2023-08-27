@@ -1,0 +1,17 @@
+.p-togglebutton.p-component {
+  border: none !important;
+  background-color: rgba(24, 113, 255, 0.75) !important;
+  @apply text-slate-100 !important;
+}
+
+.p-togglebutton.p-component:hover {
+  background-color: rgba(24, 113, 255, 0.562) !important;
+}
+
+.p-togglebutton.p-component.p-highlight {
+  background-color: rgba(136, 196, 37, 0.75) !important;
+}
+
+.p-togglebutton.p-component.p-highlight:hover {
+  background-color: rgba(135, 196, 37, 0.562) !important;
+}

@@ -1,0 +1,25 @@
+.page-products-frame {
+  min-width: 500px;
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 21 / 12;
+  background-color: #393b3f;
+  @apply flex flex-col items-center;
+}
+
+.page-products-frame.mobile {
+  aspect-ratio: 16 / 9 !important;
+  height: 100%;
+  width: 380px;
+  min-height: 110%;
+  max-height: 100%;
+  min-width: auto;
+  overflow-y: hidden;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 912px) {
+  .page-products-frame {
+    @apply hidden;
+  }
+}

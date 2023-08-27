@@ -1,0 +1,59 @@
+.card-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #f7f7f7 !important;
+}
+
+.mobile .card-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #f7f7f7 !important;
+  @apply border-1 border-gray-500 p-2 rounded-md;
+}
+
+
+.card-icon .icon-container {
+  width: 25px;
+  height: 25px;
+  background-color: #727272;
+  font-size: 12px;
+  @apply grid place-items-center rounded-md;
+}
+
+.mobile .card-icon .icon-container {
+  width: 30px;
+  height: 30px;
+  background-color: #727272;
+  font-size: 18px;
+  @apply grid place-items-center rounded-md;
+}
+
+.card-icon .icon-container.modal {
+  @apply w-7 sm:w-9 md:w-11 lg:w-10 h-7 sm:h-9 md:h-11 lg:h-10;
+}
+.card-icon .title {
+  font-size: 10.5px;
+  @apply font-bold text-gray-100;
+}
+
+.mobile .card-icon .title {
+  @apply font-bold text-gray-100 text-section-page-r-mobi;
+}
+
+.card-icon .title.modal {
+  @apply text-xs sm:text-sm lg:text-lg;
+}
+.card-icon .description {
+  font-size: 9px;
+  @apply text-gray-300;
+}
+
+.mobile .card-icon .description {
+  @apply text-title-page-r-desk;
+}
+
+.card-icon .description.modal {
+  @apply text-xs md:text-base;
+}

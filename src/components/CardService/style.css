@@ -1,0 +1,13 @@
+.card-service {
+  max-height: 75px;
+  border: 1px dashed #d6d6d6;
+  @apply p-4 rounded-sm ease-in-out duration-300 cursor-pointer;
+}
+
+.card-service:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(102, 102, 102, 0.42) 0%,
+    rgba(227, 227, 227, 0.11) 100%
+  );
+}

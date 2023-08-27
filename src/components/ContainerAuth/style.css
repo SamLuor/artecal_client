@@ -1,0 +1,28 @@
+.div-border-container-auth {
+  width: 50vw;
+  min-width: 300px;
+  max-width: 600px;
+  background: linear-gradient(180deg, #054eb0 10%, rgba(33, 150, 243, 0) 30%);
+  @apply p-1;
+  @apply rounded-3xl;
+}
+
+.container-auth {
+  @apply h-1/2;
+  @apply shadow-sm;
+  @apply grid justify-items-center;
+  @apply bg-white;
+  @apply w-full p-4 md:p-20 sm:px-8;
+  @apply rounded-3xl;
+}
+.container-auth .container-children {
+  @apply w-full mt-4 sm:mt-8 grid justify-items-center gap-4;
+}
+
+.container-auth .logo {
+  width: 120px;
+}
+
+.p-input-icon-right > i {
+  top: 40% !important;
+}

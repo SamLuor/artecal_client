@@ -1,0 +1,5 @@
+@media only screen and (max-width: 912px) {
+  .notification-view-desative {
+    @apply hidden !important;
+  }
+}

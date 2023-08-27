@@ -1,0 +1,19 @@
+.cardImageValue {
+  aspect-ratio: 149 / 185;
+  height: 250px;
+  @apply rounded-md bg-center bg-cover bg-no-repeat !important;
+}
+
+.mobile .cardImageValue {
+  z-index: 0;
+  @apply absolute bottom-0 w-full hidden;
+}
+
+.cardImageValue .overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(136, 196, 37, 0.64) 0%,
+    rgba(136, 196, 37, 0) 100%
+  );
+  @apply w-full h-full rounded-md;
+}

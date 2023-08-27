@@ -1,0 +1,42 @@
+.content-text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile .content-text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-text .section-page {
+  position: relative;
+  @apply flex items-center text-gray-200 my-1 text-section-page-r-desk;
+}
+
+.mobile .content-text .section-page {
+  position: relative;
+  @apply flex items-center text-gray-200 my-1 text-section-page-r-mobi;
+}
+
+.content-text .section-page::before {
+  content: "";
+  margin-right: 5px;
+  padding: 1px 4px;
+  background-color: #1871ff;
+}
+
+.content-text .title-page {
+  max-width: 40%;
+  color: rgba(255, 255, 255, 0.79);
+  @apply font-semibold text-title-page-r-desk;
+}
+
+.mobile .content-text .title-page {
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.79);
+  @apply font-semibold text-title-page-r-mobile;
+}
