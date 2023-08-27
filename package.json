@@ -22,6 +22,8 @@
     "swiper": "^10.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build --force",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build || true",
     "test": "react-scripts test",
